@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.SoftSuave.BustelSpotTest.Excel"/>
+      <class name="com.SoftSuave.BustelSpotTest.ActivityPageStatusTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.ProjectFunctionalityTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.LoginTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.TaskTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.ExtraFunctionalityTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.SignOutTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.MembersFunctionalityTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.ForgetPasswordTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.DownloadTrackerTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.SignUpTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.ActivityTest"/>
+      <class name="com.SoftSuave.BustelSpotTest.CreateManagementTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
