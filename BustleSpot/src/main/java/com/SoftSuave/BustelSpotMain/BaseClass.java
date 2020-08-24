@@ -34,7 +34,7 @@ public class BaseClass {
 
 	public static void initilization() throws IOException{
 		prop=new Properties();
-		fis=new FileInputStream("D:\\Selenium\\BustleSpot\\src\\main\\resources\\data.properties");
+		fis=new FileInputStream("C:\\Users\\Divyanshu\\git\\repository\\BustleSpot\\src\\main\\resources\\data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 	

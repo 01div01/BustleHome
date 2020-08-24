@@ -3,22 +3,70 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.SoftSuave.BustelSpotTest.TaskTest">
+      <class name="com.SoftSuave.BustelSpotTest.DownloadTrackerTest">
         <methods>
+          <include name="clickOnDownloadTracker"/>
           <include name="driverInitialization"/>
           <include name="close"/>
-          <include name="deleteFunctionalityYes"/>
-          <include name="clickOnTaskBeforeAllMethod"/>
         </methods>
-      </class> <!-- com.SoftSuave.BustelSpotTest.TaskTest -->
+      </class> <!-- com.SoftSuave.BustelSpotTest.DownloadTrackerTest -->
       <class name="com.SoftSuave.BustelSpotTest.MembersFunctionalityTest">
         <methods>
           <include name="clickOnRemoveInviteeLink"/>
           <include name="driverInitialization"/>
           <include name="close"/>
+          <include name="clickOnInvite"/>
           <include name="clickOnResendInvitationLink"/>
+          <include name="membersFunctionality"/>
         </methods>
       </class> <!-- com.SoftSuave.BustelSpotTest.MembersFunctionalityTest -->
+      <class name="com.SoftSuave.BustelSpotTest.SignUpTest">
+        <methods>
+          <include name="signUpAppOldUser"/>
+          <include name="signUpAppLoginLink"/>
+          <include name="driverInitialization"/>
+          <include name="close"/>
+          <include name="signUpAppInvalid"/>
+          <include name="signUpAppNewUser"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.SignUpTest -->
+      <class name="com.SoftSuave.BustelSpotTest.SignOutTest">
+        <methods>
+          <include name="signOutFun"/>
+          <include name="driverInitialization"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.SignOutTest -->
+      <class name="com.SoftSuave.BustelSpotTest.ExtraFunctionalityTest">
+        <methods>
+          <include name="clickOnOptions"/>
+          <include name="driverInitialization"/>
+          <include name="loginAsSuperAdmin"/>
+          <include name="projectFunctionality"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.ExtraFunctionalityTest -->
+      <class name="com.SoftSuave.BustelSpotTest.LoginTest">
+        <methods>
+          <include name="loginToApplicationNoData"/>
+          <include name="loginToApplicationInvalidPassword"/>
+          <include name="driverInitialization"/>
+          <include name="loginToApplicationValid"/>
+          <include name="close"/>
+          <include name="loginToApplicationShortMail"/>
+          <include name="loginToApplicationInvalidEmail"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.LoginTest -->
+      <class name="com.SoftSuave.BustelSpotTest.TaskTest">
+        <methods>
+          <include name="addTaskTestFunctionality"/>
+          <include name="driverInitialization"/>
+          <include name="close"/>
+          <include name="deleteFunctionalityYes"/>
+          <include name="clickOnTaskBeforeAllMethod"/>
+          <include name="editFunctionality"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.TaskTest -->
       <class name="com.SoftSuave.BustelSpotTest.CreateManagementTest">
         <methods>
           <include name="createOrganisationDublicates"/>
@@ -32,17 +80,41 @@
           <include name="organisationPressBack"/>
         </methods>
       </class> <!-- com.SoftSuave.BustelSpotTest.CreateManagementTest -->
-      <class name="com.SoftSuave.BustelSpotTest.LoginTest">
+      <class name="com.SoftSuave.BustelSpotTest.ForgetPasswordTest">
         <methods>
-          <include name="loginToApplicationNoData"/>
-          <include name="loginToApplicationInvalidPassword"/>
+          <include name="clickOnLogin"/>
+          <include name="forgetPasswordInvalidEmailId"/>
           <include name="driverInitialization"/>
-          <include name="loginToApplicationValid"/>
+          <include name="forgetPasswordShortEmailId"/>
           <include name="close"/>
-          <include name="loginToApplicationShortMail"/>
-          <include name="loginToApplicationInvalidEmail"/>
+          <include name="forgetPasswordNoData"/>
+          <include name="forgetPasswordValidEmailId"/>
+          <include name="clickOnLoginLinkInForgotPassword"/>
         </methods>
-      </class> <!-- com.SoftSuave.BustelSpotTest.LoginTest -->
+      </class> <!-- com.SoftSuave.BustelSpotTest.ForgetPasswordTest -->
+      <class name="com.SoftSuave.BustelSpotTest.ProjectFunctionalityTest">
+        <methods>
+          <include name="clickOnRemoveMember"/>
+          <include name="driverInitialization"/>
+          <include name="projectFunctionality"/>
+          <include name="close"/>
+          <include name="clickOnProjectBeforeAllMethod"/>
+          <include name="clickOnChageRole"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.ProjectFunctionalityTest -->
+      <class name="com.SoftSuave.BustelSpotTest.ActivityTest">
+        <methods>
+          <include name="activityPagetestclickOnToday"/>
+          <include name="activityPagetest"/>
+          <include name="driverInitialization"/>
+          <include name="close"/>
+          <include name="activityPagetestclickOnYestarday"/>
+          <include name="activityPagetestclickOnLastWeek"/>
+          <include name="activityPagetestclickOnThisMonth"/>
+          <include name="activityPagetestclickOnThisWeek"/>
+          <include name="activityPagetestclickOnLastMonth"/>
+        </methods>
+      </class> <!-- com.SoftSuave.BustelSpotTest.ActivityTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

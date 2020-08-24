@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SoftSuave.BustelSpotTest.ActivityTest">
+      <class name="com.SoftSuave.BustelSpotTest.LoginTest">
         <methods>
-          <include name="activityPagetest"/>
           <include name="driverInitialization"/>
           <include name="close"/>
+          <include name="loginToApplicationInvalidEmail"/>
         </methods>
-      </class> <!-- com.SoftSuave.BustelSpotTest.ActivityTest -->
+      </class> <!-- com.SoftSuave.BustelSpotTest.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

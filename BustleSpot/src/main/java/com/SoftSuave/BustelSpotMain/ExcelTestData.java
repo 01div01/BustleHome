@@ -29,7 +29,7 @@ public class ExcelTestData
 	{
 		try
 		{
-		fis =new FileInputStream("D:\\Selenium\\BustleSpot\\TestData.xlsx");
+		fis =new FileInputStream("C:\\Users\\Divyanshu\\git\\repository\\BustleSpot\\TestData.xlsx");
 		wb=new XSSFWorkbook(fis);
 		
 		}
